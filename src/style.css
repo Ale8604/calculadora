@@ -1,3 +1,7 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .calculadora{
     margin:0 auto;
     padding:20px;
@@ -10,7 +14,7 @@
     display:block;
     width:90%;
     height: 15vh;
-    font-size: 25px;
+    font-size: 40px;
     border-radius: 20px;
     box-shadow: 2px 2px 3px 4px rgba(0, 0, 0, 0.3);
   }
@@ -24,11 +28,18 @@
   #resultado{
     display:block;
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
     margin-bottom: 50px;
     width:97%;
     height: 15vh;
     line-height: 100px;
-    background-color:#fff;
+    background-color:rgb(240, 164, 0);
     border-radius: 25px;
+    color: white;
+  }
+
+  .calculadora td button:hover{
+    transition: 0.5s;
+    background-color: #007fd3;
+    color: white;
   }
