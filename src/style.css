@@ -17,6 +17,7 @@
     font-size: 40px;
     border-radius: 20px;
     box-shadow: 2px 2px 3px 4px rgba(0, 0, 0, 0.3);
+    margin: auto;
   }
   #creditos{
     display:block;
@@ -36,7 +37,9 @@
     background-color:rgb(240, 164, 0);
     border-radius: 25px;
     color: white;
+    margin: auto;
   }
+
 
   .calculadora td button:hover{
     transition: 0.5s;
