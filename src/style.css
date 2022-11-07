@@ -12,7 +12,7 @@
   }
   .calculadora td button{
     display:block;
-    width:90%;
+    width:85%;
     height: 15vh;
     font-size: 40px;
     border-radius: 20px;
@@ -38,11 +38,30 @@
     border-radius: 25px;
     color: white;
     margin: auto;
+    box-shadow: 2px 2px 3px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 30px;
   }
 
 
-  .calculadora td button:hover{
+.calculadora td button:hover{
     transition: 0.5s;
     background-color: #007fd3;
     color: white;
   }
+
+i{
+    position: absolute;
+    left: 90px;
+    top: 23px;  
+    color: rgb(247, 123, 0);
+    font-size: 30PX;
+    cursor: pointer;
+    
+}
+
+i:hover{
+    transition: 1s;
+    transform: rotate(150deg);
+    color:  rgb(255, 157, 59);
+}
+
