@@ -7,6 +7,10 @@ var operacion;
 
 function init(){
   //variables
+
+  /**
+   * VARIABLES DE TODOS LOS BOTONES QUE HAY EN LA CALCULADORAS Y TODOS ESTAN SIENDO LLAMADOS POR SU ID
+   */
   var resultado = document.getElementById('resultado');
   var reset = document.getElementById('reset');
   var suma = document.getElementById('suma');
@@ -27,6 +31,9 @@ function init(){
 }
 
 //Eventos de click
+/**
+ * le estan dando los valores correspondiente a cada boton de la calculadora en este cado son los nummeron que contine cada boton
+ */
 uno.onclick = function(e){
   resultado.textContent = resultado.textContent  + "1";
 }
@@ -60,6 +67,10 @@ cero.onclick = function(e){
 reset.onclick = function(e){
   resetear();
 }
+
+/**
+ * le estan dando el valor de operador a los botones que contienen los simbolos aricmeticos  
+ */
 suma.onclick = function(e){
   operandoa = resultado.textContent;
   operacion = "+";
@@ -95,6 +106,9 @@ function resetear(){
   operandob = 0;
   operacion = "";
 }
+/**
+ * Desarrollo logico de las funciones que va a tener la calculadora que sera sumar, restar, multiplicar y dividir
+ */
 
 function resolver(){
   var res = 0;
@@ -118,6 +132,12 @@ function resolver(){
   resetear();
   resultado.textContent = res;
 }
+
+/**
+ * declaro dos constantes para referirme al icono y al body y asi hacer un evento click que cuando le den click al icono quita la clase que tiene y la cambie por otra para que llame a otro icono referenciando al dark mode, despues utilizo un condicional que pregundar que si esta en modo por defecto ponga el body de color blanco y las letras negras y que la transicion sea de dos segundos y si no que ponga el body de color negro y las letras blanca 
+ */
+
+//DARK MODE
 
 const toggle = document.getElementById('toggleDark');
 const body = document.querySelector('body');
