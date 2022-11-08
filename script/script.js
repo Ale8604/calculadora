@@ -141,17 +141,18 @@ function resolver(){
 
 const toggle = document.getElementById('toggleDark');
 const body = document.querySelector('body');
+const contenedor = document.querySelector('table')
 
 toggle.addEventListener('click', function(){
     this.classList.toggle('bi-moon');
     console.log(toggle)
     if(this.classList.toggle('bi-brightness-high-fill')){
-        body.style.background = 'white';
-        body.style.color = 'black';
-        body.style.transition = '2s';
+        contenedor.style.background = '#007fd3';
+        contenedor.style.color = 'black';
+        contenedor.style.transition = '2s';
     }else{
-        body.style.background = 'black';
-        body.style.color = 'white';
-        body.style.transition = '2s';
+        contenedor.style.background = 'black';
+        contenedor.style.color = 'white';
+        contenedor.style.transition = '2s';
     }
 });
